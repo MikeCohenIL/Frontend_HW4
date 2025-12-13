@@ -107,41 +107,27 @@ section h3{
 }
 
 
-@media screen and (max-width: 540px){
-    header{
+@media screen and (max-width: 540px) {
+    header {
         height: 4em;
         margin-bottom: 1em;
     }
-    h1{
+
+    h1 {
         font-size: 2em;
 
     }
-    header div{
+
+    header div {
         font-size: 1.3em;
-        left:0.5em;
-        top:3.5em;
+        left: 0.5em;
+        top: 3.5em;
 
     }
-    #result span{
+
+    #result span {
         padding: 0.2em;
     }
-    }
-@media screen and (max-width: 310px){
-    header{
-        height: 2em;
-        margin-bottom: 0.5em;
-    }
-    h1{
-        font-size: 1.5em;
-    }
-    header div{
-        font-size: 0.8em;
-        left:0.5em;
-        top:3.5em;
-
-    }
-    .lottoForm{}
 }
 
 
-}
