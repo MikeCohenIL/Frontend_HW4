@@ -43,6 +43,9 @@ header div{
     border-radius: 6px;
 }
 
+#FormTitle{
+    margin-top: 2em;
+}
 section{
     display: flex;
     justify-content: center;
@@ -176,7 +179,7 @@ section h3{
 .footer-track {
     display: flex;
     width: max-content;
-    animation: scrollImages 50s linear infinite;
+    animation: scrollImages 30s linear infinite;
 }
 
 .footer-track img {
@@ -206,7 +209,7 @@ section h3{
     }
 
     .lottoForm{
-        grid-template-columns: repeat(4, 1fr); /* שינוי מבני אמיתי */
+        grid-template-columns: repeat(4, 1fr);
         width: 100%;
     }
 
