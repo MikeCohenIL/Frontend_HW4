@@ -62,10 +62,32 @@ function submit(){
             document.getElementById("balance").innerHTML = `${balance}`;
 
             document.getElementById("result").innerHTML = `
-    <span>Your guess: ${lottoArr}, Strong number: ${strongNum}</span>
-    <span>Actual Result:${resultArr},Strong number:${randomStrongNum}</span>  
-    <span>you guessed:${GuessCount} numbers correctly. Succses in guessing strong number: ${strongGuess}  </span> 
-    <span>New balance: ${balance}</span>`;
+    <div class="result-box">
+
+        <div class="result-section">
+            <h2>Your Guess</h2>
+            <p class="numbers">${lottoArr}</p>
+            <p class="strong">Strong number: ${strongNum}</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="result-section">
+            <h2>Actual Result</h2>
+            <p class="numbers">${resultArr}</p>
+            <p class="strong">Strong number: ${randomStrongNum}</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="result-summary">
+            <p>You guessed <strong>${GuessCount}</strong> numbers correctly</p>
+            <p>Strong number success: <strong>${strongGuess}</strong></p>
+            <p class="balance-line">New balance: <strong>${balance}$</strong></p>
+        </div>
+
+    </div>
+`;
             reset();
         }
         else{
