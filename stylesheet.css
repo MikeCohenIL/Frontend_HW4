@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("balls-6077901_1280.JPG"); /* שימי תמונה */
+    background-image: url("balls-6077901_1280.JPG");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -43,7 +43,7 @@ header div{
     border-radius: 6px;
 }
 
-#FormTitle{
+.FormTitle{
     margin-top: 2em;
 }
 section{
@@ -197,15 +197,32 @@ section h3{
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 0.5em;
+        width: 100%;
+    }
+}
+
+/*smart phone*/
+@media screen and (max-width: 576px){
 
     header{
         height: 6em;
+    }
+    header div{
+
+        bottom: 0.1em;
+
+    }
+    .FormTitle{
+        background: #34a445;
     }
 
     h1{
         font-size: 2em;
         letter-spacing: 0.1em;
+        color: #2e7d32;
     }
 
     .lottoForm{
@@ -234,7 +251,8 @@ section h3{
         margin-right: 15px;
     }
 }
-@media screen and (min-width: 541px) and (max-width: 900px){
+/*tablet*/
+@media screen and (min-width: 541px) and (max-width: 992px){
 
     header{
         height: 8em;
